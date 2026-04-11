@@ -1,0 +1,135 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEijnWsZk4gWmD4C9MLX_3HdyTAmozykhFlb2lAULQE4jQp2ejJk-5uDwBFr4eSK84YfGLliw0pMhgKEgGr8IB3nxoAEzQTQEbOkL8rY_q9cZfRA4HMA4k4rqrAkPDK5Xb3ibpU5lIqHqZ0XeGNDnSPLQdteu6FmUMuLKSHGEqFuVsP97GE24Hhar5z5eCAB" alt="SMK Karya Guna 2 Bekasi Logo" class="logo-img" />
+        <span>TKJ SMK KG2</span>
+      </div>
+      <p class="tagline">Membangun tenaga ahli infrastruktur digital yang kompeten melalui kurikulum strategis, desain instruksional matang, dan teknologi terkini.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/tkj.kg2/" aria-label="Instagram" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.tiktok.com/@tkj.kg2" aria-label="TikTok" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-nav">
+      <h4>Navigasi</h4>
+      <ul data-astro-cid-sz7xmlte>
+        <li data-astro-cid-sz7xmlte><a href={`${import.meta.env.BASE_URL}tentang-kami`} data-astro-cid-sz7xmlte>Tentang Kami</a></li>
+        <li data-astro-cid-sz7xmlte><a href={`${import.meta.env.BASE_URL}unit-produksi`} data-astro-cid-sz7xmlte>Unit Produksi</a></li>
+        <li data-astro-cid-sz7xmlte><a href={`${import.meta.env.BASE_URL}#features`} data-astro-cid-sz7xmlte>Layanan</a></li>
+        <li data-astro-cid-sz7xmlte><a href={`${import.meta.env.BASE_URL}blog`} data-astro-cid-sz7xmlte>Blog</a></li>
+        <li data-astro-cid-sz7xmlte><a href={`${import.meta.env.BASE_URL}kontak-kami`} data-astro-cid-sz7xmlte>Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontak & Lokasi</h4>
+      <ul>
+        <li>📧 info@smkkaryaguna2.sch.id</li>
+        <li>📍 Bekasi, Indonesia</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container bottom-wrapper">
+      <p>&copy; {year} TKJ KG2. All rights reserved.</p>
+      <div class="legal" data-astro-cid-sz7xmlte>
+        <a href={`${import.meta.env.BASE_URL}privacy-policy`} data-astro-cid-sz7xmlte>Privacy Policy</a>
+        <a href={`${import.meta.env.BASE_URL}disclaimer`} data-astro-cid-sz7xmlte>Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding-top: 6rem;
+    border-top: 1px solid #f1f5f9;
+    background: #fff;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-header);
+    margin-bottom: 2rem;
+  }
+
+  .logo-img { width: 60px; height: 60px; }
+
+  .tagline {
+    font-size: 0.95rem;
+    color: var(--color-body);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 400px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .socials a {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+  }
+
+  .socials a:hover { color: var(--color-primary); }
+
+  h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+  }
+
+  ul { list-style: none; }
+  li { margin-bottom: 1rem; }
+  li a { font-size: 0.9rem; color: var(--color-body); }
+  li a:hover { color: var(--color-primary); }
+
+  .footer-contact li { font-size: 0.9rem; color: var(--color-body); }
+
+  .footer-bottom {
+    border-top: 1px solid #f1f5f9;
+    padding: 2.5rem 0;
+  }
+
+  .bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--color-muted);
+  }
+
+  .legal {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .bottom-wrapper { flex-direction: column; gap: 1.5rem; text-align: center; }
+  }
+</style>

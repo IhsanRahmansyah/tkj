@@ -1,0 +1,42 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Selamat datang di Teknik Komputer dan Jaringan SMK Karya Guna 2 Bekasi. Pusat unggulan pendidikan teknologi dan jaringan." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+	<head>
+		<BaseHead title={title} description={description} />
+		<ClientRouter />
+	</head>
+	<body>
+		<a href="#main-content" class="skip-link">Lanjut ke konten utama</a>
+		<main id="main-content">
+			<slot />
+		</main>
+		<style>
+			.skip-link {
+				position: absolute;
+				top: -100px;
+				left: 0;
+				background: var(--primary);
+				color: var(--bg-dark);
+				padding: 1rem;
+				z-index: 1000;
+				transition: top 0.3s;
+				font-weight: bold;
+			}
+			.skip-link:focus {
+				top: 0;
+			}
+		</style>
+	</body>
+</html>

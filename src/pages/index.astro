@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import StrategySection from '../components/StrategySection.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="TKJ SMK Karya Guna 2 Bekasi" description="Pusat unggulan pendidikan teknologi dan jaringan dengan kurikulum strategis dan desain industri.">
+	<Navigation />
+	<main>
+		<Hero />
+		<Features />
+		<StrategySection />
+		<Testimonials />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	main {
+		overflow-x: hidden;
+	}
+</style>

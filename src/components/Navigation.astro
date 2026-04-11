@@ -1,0 +1,84 @@
+---
+const navItems = [
+  { name: 'Tentang Kami', href: `${import.meta.env.BASE_URL}tentang-kami` },
+  { name: 'Unit Produksi', href: `${import.meta.env.BASE_URL}unit-produksi` },
+  { name: 'Layanan', href: `${import.meta.env.BASE_URL}#features` },
+  { name: 'Blog', href: `${import.meta.env.BASE_URL}blog` },
+  { name: 'Kontak', href: `${import.meta.env.BASE_URL}kontak-kami` },
+];
+---
+
+<nav class="navbar">
+  <div class="container nav-wrapper">
+    <a href={import.meta.env.BASE_URL} class="logo">
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEijnWsZk4gWmD4C9MLX_3HdyTAmozykhFlb2lAULQE4jQp2ejJk-5uDwBFr4eSK84YfGLliw0pMhgKEgGr8IB3nxoAEzQTQEbOkL8rY_q9cZfRA4HMA4k4rqrAkPDK5Xb3ibpU5lIqHqZ0XeGNDnSPLQdteu6FmUMuLKSHGEqFuVsP97GE24Hhar5z5eCAB" alt="SMK Karya Guna 2 Bekasi Logo" class="logo-img" />
+      <span>TKJ SMK KG2</span>
+    </a>
+
+    <ul class="nav-links">
+      {navItems.map(item => (
+        <li><a href={item.href}>{item.name}</a></li>
+      ))}
+    </ul>
+
+    <div class="nav-action">
+      <a href={`${import.meta.env.BASE_URL}daftar`} class="btn btn-primary">Hubungi Kami</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-header);
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-body);
+  }
+
+  .nav-links a:hover {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 968px) {
+    .nav-links, .nav-action {
+      display: none;
+    }
+  }
+</style>

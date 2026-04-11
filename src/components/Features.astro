@@ -1,0 +1,112 @@
+---
+const features = [
+  {
+    title: "Kurikulum Strategis",
+    desc: "Materi yang dirancang khusus mengikuti perkembangan teknologi terbaru dan kebutuhan pasar kerja.",
+    icon: "strategy"
+  },
+  {
+    title: "Laboratorium Terpadu",
+    desc: "Praktik langsung dengan perangkat jaringan kelas industri di lingkungan lab yang representatif.",
+    icon: "lab"
+  },
+  {
+    title: "Kesiapan Karir",
+    desc: "Program pengembangan soft skill dan sertifikasi internasional untuk jaminan masa depan.",
+    icon: "career"
+  }
+];
+---
+
+<section id="features" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Mengapa Memilih TechTKJ</h2>
+      <p class="subtext">Kami memberikan pendidikan teknologi yang dirancang untuk skala industri dan pertumbuhan karir Anda.</p>
+    </div>
+
+    <div class="features-grid">
+      {features.map(item => (
+        <div class="feature-card">
+          <div class="feature-icon">
+            {item.icon === 'strategy' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            )}
+            {item.icon === 'lab' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            )}
+            {item.icon === 'career' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+            )}
+          </div>
+          <h3>{item.title}</h3>
+          <p>{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    max-width: 700px;
+    margin: 0 auto 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtext {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-primary-bg);
+    color: var(--color-primary);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .feature-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card p {
+    color: var(--color-body);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 320px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+</style>

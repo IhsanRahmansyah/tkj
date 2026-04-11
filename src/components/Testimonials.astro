@@ -1,0 +1,121 @@
+---
+const testimonials = [
+  {
+    text: "TechTKJ membantu saya merubah ketertarikan menjadi keahlian profesional. Kurikulum yang terstruktur membuat proses belajar menjadi sangat efisien.",
+    name: "Alex R.",
+    role: "Network Engineer",
+    avatar: "https://i.pravatar.cc/100?u=10"
+  },
+  {
+    text: "Belajar di sini terasa seperti bermitra dengan tim ahli. Keahlian teknis dan perhatian terhadap detail yang diajarkan sangat membantu di dunia kerja.",
+    name: "Michael T.",
+    role: "System Administrator",
+    avatar: "https://i.pravatar.cc/100?u=11"
+  },
+  {
+    text: "Para pengajar memahami kebutuhan kami dan memberikan materi yang reliabel serta mudah diterapkan. Komunikasi sangat lancar selama masa pendidikan.",
+    name: "Sarah L.",
+    role: "IT Support Specialist",
+    avatar: "https://i.pravatar.cc/100?u=12"
+  }
+];
+---
+
+<section id="testimonials" class="section-padding bg-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Apa Yang Alumni Kami Katakan</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      {testimonials.map(item => (
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">"{item.text}"</p>
+          <div class="author">
+            <img src={item.avatar} alt={item.name} class="avatar" />
+            <div class="author-info">
+              <strong>{item.name}</strong>
+              <span>{item.role}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-light {
+    background-color: var(--color-gray-light);
+  }
+
+  .section-header {
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .stars {
+    color: #fbbf24;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    color: var(--color-body);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-info strong {
+    font-size: 0.95rem;
+    color: var(--color-header);
+  }
+
+  .author-info span {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+</style>

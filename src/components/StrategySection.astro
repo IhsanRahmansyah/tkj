@@ -1,0 +1,93 @@
+---
+---
+
+<section class="strategy-section section-padding">
+  <div class="container grid-two">
+    <div class="image-box vertical">
+      <img src={`${import.meta.env.BASE_URL}student-working.png`} alt="Student in Lab" />
+    </div>
+
+    <div class="content-box">
+      <div class="image-box horizontal">
+        <img src={`${import.meta.env.BASE_URL}tech-exterior.png`} alt="Tech Architecture" />
+      </div>
+
+      <div class="strategy-text">
+        <h2 class="section-title">Di Mana Keahlian Bertemu <span class="muted">Masa Depan.</span></h2>
+        <p class="description">
+          Didirikan dengan mengedepankan kualitas, TechTKJ bermitra dengan berbagai industri untuk memberikan solusi pendidikan yang terukur. Kami menggabungkan pemikiran strategis, desain kurikulum yang matang, dan teknologi terkini untuk menjawab tantangan dunia kerja yang dinamis.
+        </p>
+        <a href={`${import.meta.env.BASE_URL}daftar`} class="btn btn-primary">Mulai Sekarang →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid-two {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    align-items: stretch;
+  }
+
+  .image-box {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-box.vertical {
+    height: 600px;
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .image-box.horizontal {
+    height: 300px;
+  }
+
+  .strategy-text {
+    max-width: 500px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-title .muted {
+    color: #94a3b8;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    color: var(--color-body);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 1024px) {
+    .grid-two {
+      grid-template-columns: 1fr;
+    }
+    .image-box.vertical {
+      height: 400px;
+      order: 1;
+    }
+    .image-box.horizontal {
+      height: 250px;
+    }
+  }
+</style>

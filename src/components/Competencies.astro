@@ -1,0 +1,123 @@
+---
+const competencies = [
+  {
+    title: "Network Architecture",
+    description: "Kuasai instalasi dan konfigurasi perangkat jaringan kelas industri seperti Cisco dan Mikrotik.",
+    icon: "🌐"
+  },
+  {
+    title: "Server Administration",
+    description: "Manajemen server berskala besar menggunakan Linux dan Windows Server untuk kebutuhan enterprise.",
+    icon: "🖥️"
+  },
+  {
+    title: "Cyber Security",
+    description: "Pelajari teknik pengamanan data, enkripsi, dan audit keamanan jaringan dari ancaman siber.",
+    icon: "🛡️"
+  },
+  {
+    title: "Fiber Optic Tech",
+    description: "Keahlian khusus dalam penyambungan (splicing) dan instalasi infrastruktur serat optik.",
+    icon: "⚡"
+  },
+  {
+    title: "Cloud Computing",
+    description: "Implementasi virtualisasi dan pengelolaan infrastruktur awan masa depan.",
+    icon: "☁️"
+  },
+  {
+    title: "IoT Development",
+    description: "Integrasi perangkat pintar dengan jaringan untuk solusi otomasi cerdas.",
+    icon: "🤖"
+  }
+];
+---
+
+<section id="keunggulan" class="section-padding">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="gradient-text">Kompetensi Inti</h2>
+      <p>Kurikulum kami dirancang untuk mencetak tenaga ahli yang relevan dengan kebutuhan industri teknologi saat ini.</p>
+    </div>
+
+    <div class="comp-grid">
+      {competencies.map(item => (
+        <div class="comp-card glass">
+          <div class="icon">{item.icon}</div>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <div class="card-glow"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+  }
+
+  .comp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .comp-card {
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s var(--transition-smooth);
+  }
+
+  .comp-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .card-glow {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .comp-card:hover .card-glow {
+    opacity: 1;
+  }
+</style>

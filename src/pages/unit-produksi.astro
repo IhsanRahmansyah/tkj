@@ -1,0 +1,62 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+---
+
+<ContentLayout title="Unit Produksi" description="Layanan jasa IT profesional dari jurusan TKJ SMK Karya Guna 2 Bekasi.">
+	<section>
+		<p>Unit Produksi TKJ SMK Karya Guna 2 Bekasi hadir untuk memberikan layanan jasa teknologi informasi berkualitas tinggi kepada masyarakat umum dan instansi. Berikut adalah beberapa layanan unggulan kami:</p>
+
+		<div class="services-list">
+			<div class="service-item">
+				<h2>1. Jasa Service Komputer & Laptop</h2>
+				<p>Kami melayani perbaikan berbagai kerusakan hardware maupun software pada komputer dan laptop, mulai dari pembersihan fan, penggantian pasta, instalasi sistem operasi, hingga upgrade komponen (RAM/SSD).</p>
+			</div>
+
+			<div class="service-item">
+				<h2>2. Jasa Pengadaan Komputer</h2>
+				<p>Membantu Anda dalam merakit PC sesuai kebutuhan (Gaming, Office, atau Server) dengan pemilihan komponen yang handal dan harga yang kompetitif.</p>
+			</div>
+
+			<div class="service-item">
+				<h2>3. Jasa Konfigurasi Jaringan</h2>
+				<p>Melayani pemasangan kabel LAN, konfigurasi Router (Mikrotik/Cisco), penyetingan WiFi, hingga pembangunan infrastruktur jaringan kantor yang stabil dan aman.</p>
+			</div>
+
+			<div class="service-item">
+				<h2>4. Jasa Desain</h2>
+				<p>Menyediakan layanan desain grafis mulai dari desain logo, media sosial, hingga desain layout publikasi untuk kebutuhan branding Anda.</p>
+			</div>
+		</div>
+
+		<div class="cta-box">
+			<h3>Ingin Menggunakan Jasa Kami?</h3>
+			<p>Silakan hubungi admin unit produksi kami melalui halaman <a href={`${import.meta.env.BASE_URL}kontak-kami`}>Kontak Kami</a> atau kunjungi langsung workshop TKJ di area sekolah.</p>
+		</div>
+	</section>
+</ContentLayout>
+
+<style>
+	.services-list {
+		display: grid;
+		gap: 3rem;
+		margin: 3rem 0;
+	}
+
+	.service-item h2 {
+		color: var(--color-primary);
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.cta-box {
+		background: var(--color-gray-light);
+		padding: 2.5rem;
+		border-radius: 1.5rem;
+		margin-top: 4rem;
+		border-left: 4px solid var(--color-primary);
+	}
+
+	.cta-box h3 {
+		margin-bottom: 1rem;
+	}
+</style>
