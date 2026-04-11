@@ -23,7 +23,7 @@ const posts = (await getCollection('blog')).sort(
 				{posts.map((post) => (
 					<article class="post-card glass">
 						{post.data.heroImage && (
-							<div class="post-image" style={`background-image: url(${post.data.heroImage})`}></div>
+							<div class="post-image" style={`background-image: url(${import.meta.env.BASE_URL}${post.data.heroImage.startsWith('/') ? post.data.heroImage.slice(1) : post.data.heroImage})`}></div>
 						)}
 						<div class="post-content">
 							<div class="meta">
