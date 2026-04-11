@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smkkg2.sch.id/tkj/sitemap-index.xml
