@@ -44,7 +44,7 @@ Siswa TKJ masa kini dituntut memahami **Cyber Security** untuk melindungi aset d
 
 Siapkah Anda melihat daftar sekolah yang akan mengubah masa depan digital Anda menjadi lebih cerah dan kompetitif?
 
-### 1\. SMK Karya Guna 2 Bekasi (Pilihan Utama)
+### 1\. SMK Karya Guna 2 Bekasi 
 
 Mengapa sekolah ini selalu menjadi buah bibir dan menduduki posisi puncak dalam setiap diskusi mengenai pendidikan teknik? Apa rahasia di balik kesuksesan para alumninya di industri besar?
 
