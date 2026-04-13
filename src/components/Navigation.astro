@@ -1,84 +1,131 @@
 ---
-const navItems = [
-  { name: 'Tentang Kami', href: `${import.meta.env.BASE_URL}tentang-kami` },
-  { name: 'Unit Produksi', href: `${import.meta.env.BASE_URL}unit-produksi` },
-  { name: 'Layanan', href: `${import.meta.env.BASE_URL}#features` },
-  { name: 'Blog', href: `${import.meta.env.BASE_URL}blog` },
-  { name: 'Kontak', href: `${import.meta.env.BASE_URL}kontak-kami` },
-];
+
 ---
 
-<nav class="navbar">
-  <div class="container nav-wrapper">
-    <a href={import.meta.env.BASE_URL} class="logo">
-      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEijnWsZk4gWmD4C9MLX_3HdyTAmozykhFlb2lAULQE4jQp2ejJk-5uDwBFr4eSK84YfGLliw0pMhgKEgGr8IB3nxoAEzQTQEbOkL8rY_q9cZfRA4HMA4k4rqrAkPDK5Xb3ibpU5lIqHqZ0XeGNDnSPLQdteu6FmUMuLKSHGEqFuVsP97GE24Hhar5z5eCAB" alt="SMK Karya Guna 2 Bekasi Logo" class="logo-img" />
-      <span>TKJ SMK KG2</span>
-    </a>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-network-wired logo-icon"></i>
+                <div class="logo-text">
+                    <h1>SMK Karya Guna 2</h1>
+                    <span>Jurusan TKJ Bekasi</span>
+                </div>
+            </div>
 
-    <ul class="nav-links">
-      {navItems.map(item => (
-        <li><a href={item.href}>{item.name}</a></li>
-      ))}
-    </ul>
+            <ul class="nav-links">
+                <li><a href="/tkj/" class="active">Beranda</a></li>
+                <li><a href="#program">Profil Jurusan</a></li>
+                <li><a href="#fasilitas">Fasilitas Laboratorium</a></li>
+                <li><a href="#berita">Berita & Prestasi</a></li>
+            </ul>
 
-    <div class="nav-action">
-      <a href={`${import.meta.env.BASE_URL}daftar`} class="btn btn-primary">Hubungi Kami</a>
+            <div class="nav-btn">
+                <a href="https://smkkg2.sch.id/spmb/" class="btn btn-primary"
+                    >Portal SPMB</a
+                >
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </div>
-  </div>
-</nav>
+</header>
 
 <style>
-  .navbar {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #f1f5f9;
-    position: sticky;
-    top: 0;
-    background: #fff;
-    z-index: 100;
-  }
-
-  .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: var(--color-header);
-  }
-
-  .logo-img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--color-body);
-  }
-
-  .nav-links a:hover {
-    color: var(--color-primary);
-  }
-
-  @media (max-width: 968px) {
-    .nav-links, .nav-action {
-      display: none;
+    header {
+        background-color: var(--white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
-  }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .logo-icon {
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
+    .logo-text h1 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .logo-text span {
+        font-size: 0.8rem;
+        color: var(--secondary-color);
+        font-weight: 600;
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex-shrink: 1;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        white-space: nowrap;
+    }
+
+    .nav-links a {
+        font-weight: 500;
+        color: var(--text-dark);
+        transition: var(--transition);
+        font-size: 0.95rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: var(--secondary-color);
+    }
+
+    .nav-btn {
+        flex-shrink: 0;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    @media (max-width: 992px) {
+        .nav-links {
+            gap: 15px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav-links,
+        .nav-btn {
+            display: none !important;
+        }
+        .mobile-menu-btn {
+            display: block !important;
+        }
+    }
 </style>

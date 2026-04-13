@@ -4,7 +4,7 @@ description: "Bingung pilih sekolah? Cek rekomendasi smk jurusan tkj terbaik di 
 pubDate: 2026-04-11
 author: "Rafi Febriansyah"
 heroImage: "/tkj-terbaik-di-bekasi.jpg"
-tags: ["TKJ"]
+tags: ["TKJ", "Jurusan"]
 ---
 
 Pernahkah Anda membayangkan betapa pesatnya kemajuan teknologi di Bekasi tahun 2026 ini? Kawasan industri seperti MM2100 dan Jababeka kini menjadi pusat **transformasi digital** yang membutuhkan banyak tenaga ahli.

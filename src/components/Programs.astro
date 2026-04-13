@@ -1,0 +1,209 @@
+---
+
+---
+
+<section id="program" class="programs">
+    <div class="container">
+        <div class="section-title">
+            <h2>Kompetensi Keahlian TKJ</h2>
+            <p>
+                Kurikulum kami dirancang menyesuaikan dengan standar industri
+                teknologi informasi terkini.
+            </p>
+        </div>
+
+        <div class="grid-3">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Jaringan Dasar"
+                    />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Infrastruktur Jaringan</h3>
+                    <p class="card-desc">
+                        Mempelajari perancangan, instalasi, dan konfigurasi
+                        jaringan lokal (LAN) maupun luas (WAN) menggunakan
+                        perangkat industri.
+                    </p>
+                    <ul class="card-list">
+                        <li>
+                            <i class="fa-solid fa-check"></i> Konfigurasi Router &
+                            Switch
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> MikroTik & Cisco Dasar
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> Instalasi Kabel Fiber
+                            Optik
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Administrasi Server"
+                    />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Administrasi Server</h3>
+                    <p class="card-desc">
+                        Pengelolaan sistem operasi server (Linux & Windows),
+                        manajemen user, dan layanan server seperti Web, DNS, dan
+                        Mail Server.
+                    </p>
+                    <ul class="card-list">
+                        <li>
+                            <i class="fa-solid fa-check"></i> Sistem Operasi Jaringan
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> Keamanan Server (Firewall)
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> Cloud Computing Dasar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Troubleshooting Hardware"
+                    />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Hardware & Troubleshooting</h3>
+                    <p class="card-desc">
+                        Keterampilan merakit komputer, instalasi sistem operasi,
+                        dan perbaikan perangkat keras dan lunak
+                        (Troubleshooting).
+                    </p>
+                    <ul class="card-list">
+                        <li>
+                            <i class="fa-solid fa-check"></i> Perakitan PC & Laptop
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> Instalasi OS & Software
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> Diagnosa Kerusakan
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .programs {
+        padding: 80px 0;
+        background-color: var(--white);
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .card {
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+        border: 1px solid var(--border-color);
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+
+    .card:hover .card-img img {
+        transform: scale(1.1);
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .card-desc {
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .card-list {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .card-list li {
+        font-size: 0.9rem;
+        color: var(--text-dark);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-list li i {
+        color: var(--primary-color);
+        margin-right: 10px;
+        font-size: 0.8rem;
+    }
+
+    .card-link {
+        color: var(--secondary-color);
+        font-weight: 600;
+        font-size: 0.95rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .card-link:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 992px) {
+        .grid-3 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

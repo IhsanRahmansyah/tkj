@@ -4,7 +4,7 @@ description: "Bagaimana lulusan TKJ SMK Karya Guna 2 Bekasi bersiap menghadapi t
 pubDate: 2026-04-10
 heroImage: "/blog/cloud-future.jpg"
 author: "Ihsan Rahmansyah"
-tags: ["Karir", "Cloud", "Industri"]
+tags: ["Karir", "Cloud", "Jurusan"]
 ---
 
 Dunia teknologi informasi berkembang dengan sangat pesat. Dulu, seorang teknisi jaringan hanya berkutat dengan kabel dan router fisik. Namun sekarang, segalanya berpindah ke **Cloud Computing**.

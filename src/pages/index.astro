@@ -1,20 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/TopBar.astro';
 import Navigation from '../components/Navigation.astro';
 import Hero from '../components/Hero.astro';
-import Features from '../components/Features.astro';
-import StrategySection from '../components/StrategySection.astro';
-import Testimonials from '../components/Testimonials.astro';
+import Programs from '../components/Programs.astro';
+import NewsAnnouncement from '../components/NewsAnnouncement.astro';
+import Teachers from '../components/Teachers.astro';
+import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="TKJ SMK Karya Guna 2 Bekasi" description="Pusat unggulan pendidikan teknologi dan jaringan dengan kurikulum strategis dan desain industri.">
+<Layout title="TKJ - SMK Karya Guna 2 Bekasi" description="Mencetak Teknisi Jaringan Handal & Profesional di SMK Karya Guna 2 Bekasi. Jurusan Teknik Komputer dan Jaringan terbaik.">
+	<TopBar />
 	<Navigation />
 	<main>
 		<Hero />
-		<Features />
-		<StrategySection />
-		<Testimonials />
+		<Programs />
+		<NewsAnnouncement />
+		<Teachers />
+		<CTA />
 	</main>
 	<Footer />
 </Layout>

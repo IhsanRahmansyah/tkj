@@ -4,7 +4,7 @@ description: "Aman dari AI! Intip 7 prospek kerja lulusan TKJ 2026 dengan gaji t
 pubDate: 2026-04-11
 author: "Ihsan Rahmansyah"
 heroImage: "/student-working.png"
-tags: ["TKJ", "SMK KG2", ""]
+tags: ["TKJ", "SMK KG2", "Jurusan"]
 ---
 
 Pernah terpikir nggak, bakal seperti apa dunia kita di tahun 2026 nanti? AI, robot, dan teknologi Cloud pasti sudah jadi makanan kita sehari-hari, kan? Tapi, siapa yang mengaturnya?
