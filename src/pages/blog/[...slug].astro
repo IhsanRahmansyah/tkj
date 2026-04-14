@@ -230,6 +230,22 @@ const schema = JSON.stringify({
 		font-weight: 600;
 	}
 
+	.prose :global(ul) {
+		list-style-type: disc;
+		padding-left: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.prose :global(ol) {
+		list-style-type: decimal;
+		padding-left: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.prose :global(li) {
+		margin-bottom: 0.5rem;
+	}
+
 	.prose :global(a) {
 		color: #0b3969; /* var(--primary-color) from global */
 		text-decoration: none;
