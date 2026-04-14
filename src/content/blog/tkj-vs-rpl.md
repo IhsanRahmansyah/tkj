@@ -5,7 +5,6 @@ pubDate: 2026-04-15
 author: "Rafi Febriansyah"
 heroImage: "/tkj-vs-rpl.png"
 tags: ["Jurusan", "TKJ"]
-draft: false
 ---
 
 Lagi pusing ya milih jurusan buat masuk SMK nanti? Udah kelas 9 tapi masih galau mau pilih antara dua raksasa IT yaitu TKJ atau RPL? Tenang, kamu nggak sendirian kok!
@@ -32,7 +31,7 @@ Ini dia daftar seru yang bakal kamu pelajarin:
 
 ## Mengenal Jurusan RPL (Rekayasa Perangkat Lunak)
 
-[Mengenal Jurus RPL](https://images.pexels.com/photos/16129724/pexels-photo-16129724.jpeg)
+![Mengenal Jurusan RPL](https://images.pexels.com/photos/16129724/pexels-photo-16129724.jpeg)
 
 Punya mimpi pengen bikin aplikasi keren kayak Gojek atau Instagram yang dipakai jutaan orang? Atau mau bikin game sendiri? Berarti kamu cocok banget masuk ke dunia **Rekayasa Perangkat Lunak**.
 
@@ -60,7 +59,6 @@ Biar makin jelas perbandingan **TKJ vs RPL**, coba deh intip tabel simpel di baw
 | **Materi Inti** | Administrasi Server & Mikrotik | Web & Mobile Development |
 | **Kerjaan Nanti** | Network Admin, IT Support | Web Developer, App Developer |
 | **Potensi Gaji** | Oke Banget (Apalagi kalau bersertifikat) | Mantap Banget (Tergantung Portofolio) |
-
 
 Baca juga [Rekomendasi SMK Jurusan TKJ Terbaik di Bekasi](https://smkkg2.sch.id/tkj/blog/tkj-terbaik-di-bekasi)
 
