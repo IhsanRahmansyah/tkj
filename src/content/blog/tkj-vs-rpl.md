@@ -61,6 +61,7 @@ Biar makin jelas perbandingan **TKJ vs RPL**, coba deh intip tabel simpel di baw
 | **Kerjaan Nanti** | Network Admin, IT Support | Web Developer, App Developer |
 | **Potensi Gaji** | Oke Banget (Apalagi kalau bersertifikat) | Mantap Banget (Tergantung Portofolio) |
 
+
 Baca juga [Rekomendasi SMK Jurusan TKJ Terbaik di Bekasi](https://smkkg2.sch.id/tkj/blog/tkj-terbaik-di-bekasi)
 
 ## Mana yang Cocok untuk Kamu?
