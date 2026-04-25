@@ -2,7 +2,7 @@
 title: "Masa Depan Karir Lulusan TKJ di Era Cloud Computing"
 description: "Bagaimana lulusan TKJ SMK Karya Guna 2 Bekasi bersiap menghadapi transformasi digital dengan keahlian Cloud dan Networking."
 pubDate: 2026-04-10
-heroImage: "/blog/cloud-future.jpg"
+heroImage: "../../assets/hero-main.png"
 author: "Ihsan Rahmansyah"
 tags: ["Karir", "Cloud", "Jurusan"]
 ---

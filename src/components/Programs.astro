@@ -1,5 +1,8 @@
 ---
-
+import { Image } from 'astro:assets';
+import netImg from '../assets/tech-exterior.png';
+import serverImg from '../assets/student-working.png';
+import hwImg from '../assets/tkj-terbaik-di-bekasi.jpg';
 ---
 
 <section id="program" class="programs">
@@ -16,8 +19,8 @@
             <!-- Card 1 -->
             <div class="card">
                 <div class="card-img">
-                    <img
-                        src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <Image
+                        src={netImg}
                         alt="Jaringan Dasar"
                     />
                 </div>
@@ -47,8 +50,8 @@
             <!-- Card 2 -->
             <div class="card">
                 <div class="card-img">
-                    <img
-                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <Image
+                        src={serverImg}
                         alt="Administrasi Server"
                     />
                 </div>
@@ -76,8 +79,8 @@
             <!-- Card 3 -->
             <div class="card">
                 <div class="card-img">
-                    <img
-                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <Image
+                        src={hwImg}
                         alt="Troubleshooting Hardware"
                     />
                 </div>

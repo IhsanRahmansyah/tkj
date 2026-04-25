@@ -3,7 +3,7 @@ title: "Rekomendasi SMK Jurusan TKJ Terbaik di Bekasi untuk Masa Depan Digital 2
 description: "Bingung pilih sekolah? Cek rekomendasi smk jurusan tkj terbaik di Bekasi Timur. SMK Karya Guna 2 punya lab standar industri & siap kerja 2026. Daftar yuk!"
 pubDate: 2026-04-11
 author: "Rafi Febriansyah"
-heroImage: "/tkj-terbaik-di-bekasi.jpg"
+heroImage: "./tkj-terbaik-di-bekasi.jpg"
 tags: ["TKJ", "Jurusan"]
 ---
 

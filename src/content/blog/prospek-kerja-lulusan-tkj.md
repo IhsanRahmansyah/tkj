@@ -3,7 +3,7 @@ title: "7 Prospek Kerja Lulusan TKJ di Tahun 2026"
 description: "Aman dari AI! Intip 7 prospek kerja lulusan TKJ 2026 dengan gaji tinggi. Bangun karir IT impianmu di SMK Karya Guna 2 Bekasi. Cek daftar lengkapnya di sini!"
 pubDate: 2026-04-11
 author: "Ihsan Rahmansyah"
-heroImage: "/student-working.png"
+heroImage: "./student-working.png"
 tags: ["TKJ", "SMK KG2", "Jurusan"]
 ---
 

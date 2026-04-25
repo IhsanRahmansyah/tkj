@@ -3,7 +3,7 @@ title: "TKJ vs RPL, Mana yang Lebih Cocok untuk Kamu? Simak Perbandingannya!"
 description: "Bingung pilih jurusan SMK antara TKJ dan RPL? Baca perbandingan lengkap materi kuliah, prospek kerja, gaji, dan kecocokannya dengan kepribadian kamu di sini! Jangan salah pilih masa depan."
 pubDate: 2026-04-15
 author: "Rafi Febriansyah"
-heroImage: "/tkj-vs-rpl.png"
+heroImage: "./tkj-vs-rpl.png"
 tags: ["Jurusan", "TKJ"]
 ---
 

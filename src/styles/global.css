@@ -2,11 +2,16 @@
     --primary-color: #0b3969; /* Deep Blue */
     --secondary-color: #fca311; /* Accent Orange */
     --text-dark: #1f2937;
-    --text-light: #6b7280;
+    --text-light: #4b5563; /* Darkened from #6b7280 for better contrast */
     --bg-light: #f3f4f6;
     --white: #ffffff;
     --border-color: #e5e7eb;
     --transition: all 0.3s ease;
+
+    /* Aliases for ContentLayout */
+    --color-header: var(--primary-color);
+    --color-primary: var(--secondary-color);
+    --color-body: var(--text-dark);
 }
 
 /* === RESET & BASIC STYLES === */
@@ -78,7 +83,7 @@ img {
 
 .btn-primary {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .btn-primary:hover {
